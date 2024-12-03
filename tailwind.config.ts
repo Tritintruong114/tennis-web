@@ -10,8 +10,8 @@ export default {
     extend: {
       colors: {},
       fontFamily: {
-        coolvetica: ["Coolvetica", "sans-serif"],
         satoshi: ["Satoshi", "sans"],
+        coolvetica: ["Coolvetica", "sans-serif"],
       },
     },
   },

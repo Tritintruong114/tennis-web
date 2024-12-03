@@ -8,6 +8,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: "Satoshi";
   src: url("/fonts/satoshi/Satoshi-medium.otf") format("opentype");
