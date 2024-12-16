@@ -1,0 +1,11 @@
+{
+  "header": {
+    "menuItems": [
+      { "label": "Locations", "url": "/locations" },
+      { "label": "Fitness", "url": "/fitness" },
+      { "label": "Sport Website", "url": "/" },
+      { "label": "About", "url": "/about" },
+      { "label": "Contact", "url": "/contact" }
+    ]
+  }
+}
