@@ -55,7 +55,7 @@ export default {
         title: "clamp(2.44rem, 2.38vw + 1.85rem, 2.8rem)",
         features: "clamp(3.05rem, 3.54vw + 2.17rem, 5rem)",
         section: "clamp(3.81rem, 5.18vw + 2.52rem, 4rem)",
-        hero: "clamp(4.77rem, 7.48vw + 2.9rem, 6rem)",
+        hero: "clamp(4rem, 7.48vw + 5rem, 12rem)",
       },
       translate: {
         "hidden-menu": "-100%", // For hiding the menu

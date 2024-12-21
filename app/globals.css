@@ -5,7 +5,7 @@
 
 @font-face {
   font-family: "Coolvetica";
-  src: url("/fonts/coolvetica/CoolveticaRg.otf") format("opentype");
+  src: url("/fonts/coolvetica/CoolveticaRgCond.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
@@ -19,4 +19,7 @@
 
 .material-symbols-outlined {
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+span {
+  margin: 0 0.9rem;
 }

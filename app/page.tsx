@@ -1,8 +1,13 @@
+import Coaches from "@/components/pages/home-page/Coaches";
+import Hero from "@/components/pages/home-page/Hero";
+import Register from "@/components/pages/home-page/Register";
+
 export default function Home() {
   return (
-    <main className="text-black">
-      <h1 className="text-3xl font-coolvetica">font install test</h1>
-      <h1 className="text-3xl font-satoshi">font install test</h1>
-    </main>
+    <>
+      <Hero />
+      <Register />
+      <Coaches />
+    </>
   );
 }
