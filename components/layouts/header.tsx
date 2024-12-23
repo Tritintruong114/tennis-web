@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { header } from "@/data/header.json";
+import { header } from "@/data/mock.json";
 
 import cx from "classnames";
 

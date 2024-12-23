@@ -2,9 +2,9 @@ import React from "react";
 
 const Register = () => {
   return (
-    <section className="w-screen relative z-20 py-24 bg-black">
-      <div className="container flex md:flex-row flex-col  justify-between xl:items-center">
-        <h2 className="text-white xl:w-2/4 font-coolvetica text-title uppercase">
+    <section className="w-screen relative z-20 py-32 bg-black">
+      <div className="container flex md:flex-row flex-col  justify-between md:items-center">
+        <h2 className="text-white xl:w-2/4 font-coolvetica text-section uppercase">
           let’s experience Tennis together
         </h2>
         <div className="flex flex-col gap-3">

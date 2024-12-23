@@ -1,0 +1,107 @@
+{
+  "header": {
+    "menuItems": [
+      { "label": "Locations", "url": "/locations" },
+      { "label": "Fitness", "url": "/fitness" },
+      { "label": "Sport Website", "url": "/" },
+      { "label": "About", "url": "/about" },
+      { "label": "Contact", "url": "/contact" }
+    ]
+  },
+  "footer": {
+    "menuItems": [
+      { "label": "Locations", "url": "/locations" },
+      { "label": "Fitness", "url": "/fitness" },
+      { "label": "About", "url": "/about" },
+      { "label": "Contact", "url": "/contact" }
+    ]
+  },
+  "coaches": [
+    {
+      "id": 1,
+      "image": "/images/coaches.jpeg",
+      "location": "Los Angeles, CA",
+      "name": "Bruno Truong",
+      "description": "With 18 years of coaching under her belt, Sarah is known for her ability to develop young talent, guiding players to reach their full potential on the court."
+    },
+    {
+      "id": 2,
+      "image": "/images/coaches.jpeg",
+      "location": "New York, NY",
+      "name": "Emily Johnson",
+      "description": "Emily specializes in coaching defensive strategies and has led multiple teams to championship victories."
+    },
+    {
+      "id": 3,
+      "image": "/images/coaches.jpeg",
+      "location": "Austin, TX",
+      "name": "Michael Nguyen",
+      "description": "Michael is passionate about mentoring young players and focuses on improving their technical skills and teamwork."
+    },
+    {
+      "id": 4,
+      "image": "/images/coaches.jpeg",
+      "location": "San Francisco, CA",
+      "name": "Sophia Lee",
+      "description": "Sophia brings a fresh perspective to coaching with her innovative training methods and strong emphasis on mental resilience."
+    }
+  ],
+  "locations": [
+    {
+      "id": 1,
+      "name": "Grandview Park Tennis Center",
+      "address": "123 Maplewood Drive, Riverton",
+      "image": "/images/coaches.jpeg"
+    },
+    {
+      "id": 2,
+      "name": "Grandview Park Tennis Center",
+      "address": "123 Maplewood Drive, Riverton",
+      "image": "/images/coaches.jpeg"
+    },
+    {
+      "id": 3,
+      "name": "Grandview Park Tennis Center",
+      "address": "123 Maplewood Drive, Riverton",
+      "image": "/images/coaches.jpeg"
+    },
+    {
+      "id": 4,
+      "name": "Grandview Park Tennis Center",
+      "address": "123 Maplewood Drive, Riverton",
+      "image": "/images/coaches.jpeg"
+    }
+  ],
+  "faqs": [
+    {
+      "id": 1,
+      "question": "Is it accessible?",
+      "answer": "Yes. It adheres to the WAI-ARIA design pattern."
+    },
+    {
+      "id": 2,
+      "question": "How do I install it?",
+      "answer": "You can install it via npm or yarn by running the appropriate commands."
+    },
+    {
+      "id": 3,
+      "question": "Can I customize the styles?",
+      "answer": "Yes, the component supports full customization via CSS or a CSS-in-JS library."
+    },
+    {
+      "id": 4,
+      "question": "Does it support dark mode?",
+      "answer": "Absolutely! It is designed to work seamlessly with both light and dark modes."
+    },
+    {
+      "id": 5,
+      "question": "Is it compatible with all browsers?",
+      "answer": "It is compatible with modern browsers like Chrome, Firefox, and Safari. Legacy browsers may have limited support."
+    },
+    {
+      "id": 6,
+      "question": "Can I use it in my React project?",
+      "answer": "Yes, the component is built for React and works seamlessly in any React application."
+    }
+  ]
+}

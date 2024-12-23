@@ -1,11 +1,9 @@
 "use client";
 import React, { useRef } from "react";
-import heroVideo from "/videos/hero_video.mp4";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
-import BackgroundVideo from "next-video/background-video";
 import { useGSAP } from "@gsap/react";
 
 const Hero = () => {
@@ -19,7 +17,6 @@ const Hero = () => {
         trigger: videoWrapRef.current,
         pin: true,
         scrub: true,
-        markers: true,
         start: "top top",
         end: "bottom top",
         toggleActions: "play reverse play reverse",
@@ -60,10 +57,16 @@ const Hero = () => {
               Elevate Your Game
             </p>
             <div className="h-full w-full overflow-hidden absolute items-start top-0">
-              <BackgroundVideo
-                className="h-full"
-                src={heroVideo}
-              ></BackgroundVideo>
+              <video
+                autoPlay
+                muted
+                aria-label="Video player"
+                className="h-full w-full object-cover"
+                loop
+              >
+                <source src="/videos/hero_video.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
             </div>
           </div>
         </div>
