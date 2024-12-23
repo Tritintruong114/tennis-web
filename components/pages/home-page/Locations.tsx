@@ -1,17 +1,20 @@
 import Image from "next/image";
 import React from "react";
 import { locations } from "@/data/mock.json";
+import Button from "@/components/elements/button";
+import Section from "@/components/layouts/section";
+import Container from "@/components/layouts/container";
 
 const Locations = () => {
   return (
-    <section className="py-32 relative">
+    <Section className="relative">
       <Image
         src="/images/locations.jpg"
         alt=""
         fill
         className="object-cover blur object-top"
       />
-      <div className="container relative">
+      <Container className="relative">
         <div className="grid sm:grid-cols-2 gap-6">
           <div className="flex flex-col gap-3">
             <h2 className="text-section font-coolvetica text-white">
@@ -23,9 +26,7 @@ const Locations = () => {
               tennis community. Enroll today and become part of a legacy of
               excellence.
             </p>
-            <button className="ml-3 w-fit px-6 py-3 uppercase bg-highlight-green rounded-full">
-              Explore Academy
-            </button>
+            <Button className="w-fit">Explore Academy</Button>
           </div>
           <div className="grid sm:grid-cols-2 gap-6">
             {locations.map((item, index) => {
@@ -48,9 +49,9 @@ const Locations = () => {
             })}
           </div>
         </div>
-      </div>
+      </Container>
       ;
-    </section>
+    </Section>
   );
 };
 

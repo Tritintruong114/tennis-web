@@ -27,7 +27,7 @@ const Header = () => {
     <nav className="flex w-screen items-center justify-between sm:justify-center p-6 border-b">
       <ul
         className={cx(
-          "flex top-0 right-0  bg-white flex-col sm:translate-y-0 sm:flex-row duration-150 w-full justify-center sm:justify-between max-w-3xl items-center absolute sm:relative h-screen sm:h-full",
+          "flex top-0 right-0  bg-white flex-col sm:translate-y-0 sm:flex-row duration-150 w-full justify-center sm:justify-between z-20 max-w-3xl items-center absolute sm:relative h-screen sm:h-full",
           showMenu ? "translate-y-visible-menu" : "translate-y-hidden-menu"
         )}
       >
@@ -43,11 +43,11 @@ const Header = () => {
           </li>
         ))}
       </ul>
-      <div className="relative sm:hidden font-coolvetica uppercase text-sub-title cursor-pointer">
+      <div className="relative sm:hidden font-coolvetica uppercase text-sub-title cursor-pointer z-20">
         <Link href="/">Tennis Academy</Link>
       </div>
       <span
-        className="material-symbols-outlined sm:hidden relative cursor-pointer"
+        className="material-symbols-outlined sm:hidden relative cursor-pointer z-20"
         onClick={toggleMenu}
       >
         {showMenu ? "close" : "menu"}

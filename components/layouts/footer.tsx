@@ -2,10 +2,13 @@ import Link from "next/link";
 import React from "react";
 import { footer } from "@/data/mock.json";
 import cx from "classnames";
+import Section from "./section";
+import Button from "../elements/button";
+import Input from "../elements/input";
 
 const Footer = () => {
   return (
-    <section className="py-24">
+    <Section>
       <div className="container">
         <div className="flex justify-between w-full sm:flex-row flex-col">
           <div>
@@ -49,20 +52,16 @@ const Footer = () => {
             </p>
           </div>
           <div className="flex h-fit pt-6">
-            <input
-              className="rounded-full w-[300px] px-6 p-3 border-4 bg-transparent placeholder:text-black/60"
-              placeholder="Your email"
-            ></input>
-            <button className="ml-3 px-6 py-3 uppercase bg-highlight-green rounded-full">
-              Subscribe
-            </button>
+            <Input color="secondary" placeholder="Subscribe here!" />
+
+            <Button>Subcribe</Button>
           </div>
         </div>
         <div className="pt-6 border-t mt-6">
           <p>© 2024 Elysian Tennis. All rights reserved.</p>
         </div>
       </div>
-    </section>
+    </Section>
   );
 };
 

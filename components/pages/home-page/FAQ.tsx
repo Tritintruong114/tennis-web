@@ -8,11 +8,13 @@ import {
 import Link from "next/link";
 import React from "react";
 import { faqs } from "@/data/mock.json";
+import Section from "@/components/layouts/section";
+import Container from "@/components/layouts/container";
 
 const FAQ = () => {
   return (
-    <section className="py-24 bg-black">
-      <div className="container">
+    <Section className="bg-black">
+      <Container>
         <div className="flex gap-12 sm:flex-row flex-col">
           <div className="text-white">
             <h2 className="font-coolvetica text-section">FaQs</h2>
@@ -43,8 +45,8 @@ const FAQ = () => {
             })}
           </Accordion>
         </div>
-      </div>
-    </section>
+      </Container>
+    </Section>
   );
 };
 

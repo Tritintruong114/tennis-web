@@ -1,17 +1,18 @@
 import Image from "next/image";
 import React from "react";
 import { coaches } from "@/data/mock.json";
+import Section from "@/components/layouts/section";
+import Container from "@/components/layouts/container";
+import Button from "@/components/elements/button";
 const Coaches = () => {
   return (
-    <section className="py-32">
-      <div className="container">
+    <Section>
+      <Container>
         <div className="flex flex-col xl:flex-row mb-12 justify-between items-center">
           <h2 className="text-section font-coolvetica">
             Meet the Coaches Behind elysian
           </h2>
-          <button className="ml-3 px-6 py-3 uppercase bg-highlight-green rounded-full">
-            Explore Academy
-          </button>
+          <Button>Explore Academy</Button>
         </div>
         <div className="grid sm:grid-cols-2 gap-24">
           {coaches.map((coach, index) => {
@@ -39,8 +40,8 @@ const Coaches = () => {
             );
           })}
         </div>
-      </div>
-    </section>
+      </Container>
+    </Section>
   );
 };
 

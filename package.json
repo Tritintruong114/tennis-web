@@ -23,6 +23,7 @@
     "react": "19.0.0-rc-66855b96-20241106",
     "react-dom": "19.0.0-rc-66855b96-20241106",
     "tailwind-merge": "^2.5.5",
+    "tailwind-variants": "^0.3.0",
     "tailwindcss-animate": "^1.0.7",
     "usehooks-ts": "^3.1.0"
   },

@@ -6,6 +6,9 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 import { useGSAP } from "@gsap/react";
+import Button from "@/components/elements/button";
+import Section from "@/components/layouts/section";
+import Container from "@/components/layouts/container";
 
 const Rally = () => {
   const imageWrapRef = useRef(null);
@@ -26,8 +29,8 @@ const Rally = () => {
     });
   }, []);
   return (
-    <section className="py-24 border-b">
-      <div className="container flex flex-col gap-6 justify-center items-center">
+    <Section className="py-24 border-b">
+      <Container className=" flex flex-col gap-6 justify-center items-center">
         <h2 className="font-coolvetica leading-none z-20 text-hero text-center">
           Ready to
           <br />
@@ -45,11 +48,11 @@ const Rally = () => {
             className="w-full h-full scale-150"
           />
         </div>
-        <button className="uppercase font-satoshi hover:bg-gray-100 duration-300 border w-full py-3 rounded-full">
-          Join a camp
-        </button>
-      </div>
-    </section>
+        <Button color="secondary" fullWidth>
+          Join the camp
+        </Button>
+      </Container>
+    </Section>
   );
 };
 

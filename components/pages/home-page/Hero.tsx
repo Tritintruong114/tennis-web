@@ -5,6 +5,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 import { useGSAP } from "@gsap/react";
+import Section from "@/components/layouts/section";
+import Container from "@/components/layouts/container";
 
 const Hero = () => {
   const videoWrapRef = useRef(null);
@@ -28,8 +30,8 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="flex relative items-center justify-center h-fit">
-      <div className="container">
+    <Section className="py-0 flex relative items-center justify-center h-fit">
+      <Container>
         <h1 className="uppercase relative z-10  text-black leading-none  font-coolvetica text-hero text-center">
           <span>Swing</span>
           <span>With</span>
@@ -70,8 +72,8 @@ const Hero = () => {
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </Container>
+    </Section>
   );
 };
 
