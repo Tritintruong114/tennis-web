@@ -30,7 +30,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <Section className="py-0 flex relative items-center justify-center h-fit">
+    <Section className="flex relative items-center justify-center pb-0">
       <Container>
         <h1 className="uppercase relative z-10  text-black leading-none  font-coolvetica text-hero text-center">
           <span>Swing</span>

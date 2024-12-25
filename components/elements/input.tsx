@@ -24,12 +24,12 @@ const input = tv({
     {
       color: "primary",
       size: "sm",
-      class: "border-2", // Add border styling for small primary inputs
+      class: "border-2",
     },
     {
       color: "secondary",
       size: "lg",
-      class: "border-4", // Custom border size for large secondary inputs
+      class: "border-4",
     },
   ],
   defaultVariants: {
@@ -44,7 +44,7 @@ type InputProps = {
   color?: "primary" | "secondary";
   size?: "sm" | "md" | "lg";
   fullWidth?: boolean;
-  className?: string; // For overriding external class names
+  className?: string;
 };
 
 const Input: React.FC<InputProps> = ({
@@ -52,16 +52,12 @@ const Input: React.FC<InputProps> = ({
   color = "primary",
   size = "md",
   fullWidth = false,
-  className, // External className prop
+  className,
 }) => {
-  // Generate the class names for the input
   const inputClass = input({ color, size, fullWidth });
 
   return (
-    <input
-      className={cx(inputClass, className)} // Merge inputClass and any external className
-      placeholder={placeholder}
-    />
+    <input className={cx(inputClass, className)} placeholder={placeholder} />
   );
 };
 
