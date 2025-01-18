@@ -20,8 +20,10 @@
 .material-symbols-outlined {
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
 }
+.custom-height {
+  height: calc(98vh - 6rem);
+}
 span {
-  margin: 0 0.9rem;
 }
 @layer base {
   :root {

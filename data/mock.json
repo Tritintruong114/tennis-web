@@ -4,7 +4,7 @@
       { "label": "Locations", "url": "/locations" },
       { "label": "Fitness", "url": "/fitness" },
       { "label": "Sport Website", "url": "/" },
-      { "label": "About", "url": "/about" },
+      { "label": "About", "url": "/about-us" },
       { "label": "Contact", "url": "/contact" }
     ]
   },
