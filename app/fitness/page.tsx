@@ -8,6 +8,7 @@ import Section from "@/components/layouts/section";
 import React, { useLayoutEffect } from "react";
 import Container from "@/components/layouts/container";
 import Image from "next/image";
+import Rally from "@/components/pages/home-page/Rally";
 
 const FitnessPage = () => {
   useLayoutEffect(() => {
@@ -18,18 +19,6 @@ const FitnessPage = () => {
         trigger: ".sticky", // The element to trigger animation
         start: "bottom 30%", // Start animation when top of ".sticky" is at the center of the viewport
         toggleActions: "play none none reverse", // Play and reverse when entering/exiting
-      },
-    });
-    gsap.to(".image_container", {
-      translateY: "-50%", // The target translateY value
-      ease: "ease.out", // No easing to maintain a linear effect
-      scrollTrigger: {
-        markers: true, // Debug markers for scroll trigger (remove in production)
-        trigger: ".image_gallaries", // The element that triggers the animation
-        start: "top 70%", // Start animation when the top of `.image_gallaries` is at 70% of the viewport
-        end: "top 30%", // End animation when the top of `.image_gallaries` is at 30% of the viewport
-        scrub: true, // Smoothly link the animation progress to the scroll position
-        toggleActions: "play none none reverse", // Play when entering and reverse when exiting
       },
     });
   }, []);
@@ -80,35 +69,114 @@ const FitnessPage = () => {
           </div>
         </div>
       </Section>
-      <Section className="image_gallaries">
+      <Section className="">
         <Container className="h-full w-full relative">
           <div>
             <h2 className="font-coolvetica relative z-10 uppercase font-bold text-hero leading-none text-center">
               our fitness facilities
             </h2>
           </div>
-          <div className="absolute top-0">
-            <div className="relative translate-y-[50%] image_container w-[300px] h-[300px]">
-              <Image
-                src="/images/aboutus.jpg"
-                alt=""
-                fill
-                className="object-cover object-top"
-              />
+          <div className="grid grid-cols-1 sm:grid-cols-3 mt-12 gap-12">
+            <div>
+              <div className="relative hover:scale-105 drop-shadow duration-300 aspect-square rounded-3xl overflow-hidden flex items-end">
+                <Image
+                  src="/images/aboutus.jpg"
+                  alt=""
+                  fill
+                  className="object-cover object-top"
+                />
+                <div className="relative p-6 bg-white w-full">
+                  <h3 className="font-coolvetica text-title">Our Facilities</h3>
+                  <span className="bg-highlight-green rounded-full px-2 py-1">
+                    Our Facilities is the best
+                  </span>
+                </div>
+              </div>
             </div>
-          </div>
-          <div className="absolute right-0 top-0">
-            <div className="relative translate-y-[90%] image_container w-[300px] h-[300px]">
-              <Image
-                src="/images/aboutus.jpg"
-                alt=""
-                fill
-                className="object-cover object-top"
-              />
+            <div>
+              <div className="relative hover:scale-105 drop-shadow duration-300 aspect-square rounded-3xl overflow-hidden flex items-end">
+                <Image
+                  src="/images/aboutus.jpg"
+                  alt=""
+                  fill
+                  className="object-cover object-top"
+                />
+                <div className="relative p-6 bg-white w-full">
+                  <h3 className="font-coolvetica text-title">Our Facilities</h3>
+                  <span className="bg-highlight-green rounded-full px-2 py-1">
+                    Our Facilities is the best
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div className="relative hover:scale-105 drop-shadow duration-300 aspect-square rounded-3xl overflow-hidden flex items-end">
+                <Image
+                  src="/images/aboutus.jpg"
+                  alt=""
+                  fill
+                  className="object-cover object-top"
+                />
+                <div className="relative p-6 bg-white w-full">
+                  <h3 className="font-coolvetica text-title">Our Facilities</h3>
+                  <span className="bg-highlight-green rounded-full px-2 py-1">
+                    Our Facilities is the best
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div className="relative hover:scale-105 drop-shadow duration-300 aspect-square rounded-3xl overflow-hidden flex items-end">
+                <Image
+                  src="/images/aboutus.jpg"
+                  alt=""
+                  fill
+                  className="object-cover object-top"
+                />
+                <div className="relative p-6 bg-white w-full">
+                  <h3 className="font-coolvetica text-title">Our Facilities</h3>
+                  <span className="bg-highlight-green rounded-full px-2 py-1">
+                    Our Facilities is the best
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div className="relative hover:scale-105 drop-shadow duration-300 aspect-square rounded-3xl overflow-hidden flex items-end">
+                <Image
+                  src="/images/aboutus.jpg"
+                  alt=""
+                  fill
+                  className="object-cover object-top"
+                />
+                <div className="relative p-6 bg-white w-full">
+                  <h3 className="font-coolvetica text-title">Our Facilities</h3>
+                  <span className="bg-highlight-green rounded-full px-2 py-1">
+                    Our Facilities is the best
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div className="relative hover:scale-105 drop-shadow duration-300 aspect-square rounded-3xl overflow-hidden flex items-end">
+                <Image
+                  src="/images/aboutus.jpg"
+                  alt=""
+                  fill
+                  className="object-cover object-top"
+                />
+                <div className="relative p-6 bg-white w-full">
+                  <h3 className="font-coolvetica text-title">Our Facilities</h3>
+                  <span className="bg-highlight-green rounded-full px-2 py-1">
+                    Our Facilities is the best
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
         </Container>
       </Section>
+      <Rally />
     </React.Fragment>
   );
 };

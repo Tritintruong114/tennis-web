@@ -12,9 +12,9 @@ const AboutUsPage = () => {
       <Section className="">
         <Container>
           <div className="text-center">
-            <h2 className="text-hero font-coolvetica uppercase relative">
+            <h1 className="text-hero font-coolvetica uppercase relative">
               About us
-            </h2>
+            </h1>
             <div className="-mt-20">
               <Image
                 src="/images/locations.jpg"
@@ -61,6 +61,22 @@ const AboutUsPage = () => {
                   Our history
                 </p>
                 <ul>
+                  <li className="flex gap-6 my-3">
+                    <span className="font-bold mx-0 font-coolvetica text-sub-title">
+                      2010
+                    </span>
+                    <p className="text-base font-satoshi text-white/80">
+                      Foundation of Academy in San Francisco
+                    </p>
+                  </li>
+                  <li className="flex gap-6 my-3">
+                    <span className="font-bold mx-0 font-coolvetica text-sub-title">
+                      2010
+                    </span>
+                    <p className="text-base font-satoshi text-white/80">
+                      Foundation of Academy in San Francisco
+                    </p>
+                  </li>
                   <li className="flex gap-6 my-3">
                     <span className="font-bold mx-0 font-coolvetica text-sub-title">
                       2010

@@ -124,5 +124,8 @@ export default {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [
+    require("tailwindcss-animate"),
+    require("@xpd/tailwind-3dtransforms"),
+  ],
 } satisfies Config;
