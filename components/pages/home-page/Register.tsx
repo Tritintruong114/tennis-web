@@ -1,5 +1,4 @@
-import Button from "@/components/elements/button";
-import Input from "@/components/elements/input";
+import NewLetter from "@/components/elements/newletter";
 import Container from "@/components/layouts/container";
 import Section from "@/components/layouts/section";
 import React from "react";
@@ -13,10 +12,7 @@ const Register = () => {
         </h2>
         <div className="flex flex-col gap-3">
           <p className="text-white/60">Stay up to date</p>
-          <div className="flex gap-3">
-            <Input placeholder="Register here!" />
-            <Button>Subscribe</Button>
-          </div>
+          <NewLetter />
         </div>
       </Container>
     </Section>

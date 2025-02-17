@@ -45,6 +45,10 @@ type InputProps = {
   size?: "sm" | "md" | "lg";
   fullWidth?: boolean;
   className?: string;
+  value?: string;
+  onChange?: (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => void;
 };
 
 const Input: React.FC<InputProps> = ({
@@ -52,12 +56,19 @@ const Input: React.FC<InputProps> = ({
   color = "primary",
   size = "md",
   fullWidth = false,
+  value = "",
+  onChange,
   className,
 }) => {
   const inputClass = input({ color, size, fullWidth });
 
   return (
-    <input className={cx(inputClass, className)} placeholder={placeholder} />
+    <input
+      onChange={onChange}
+      value={value}
+      className={cx(inputClass, className)}
+      placeholder={placeholder}
+    />
   );
 };
 
