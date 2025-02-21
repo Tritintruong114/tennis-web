@@ -5,6 +5,7 @@ import cx from "classnames";
 import Section from "./section";
 import Button from "../elements/button";
 import Input from "../elements/input";
+import NewLetter from "../elements/newletter";
 
 const Footer = () => {
   return (
@@ -51,11 +52,7 @@ const Footer = () => {
               From coast to coast: Uncover our 4 tennis camp locations.
             </p>
           </div>
-          <div className="flex h-fit pt-6">
-            <Input color="secondary" placeholder="Subscribe here!" />
-
-            <Button>Subcribe</Button>
-          </div>
+          <NewLetter />
         </div>
         <div className="pt-6 border-t mt-6">
           <p>© 2024 Elysian Tennis. All rights reserved.</p>

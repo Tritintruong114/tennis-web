@@ -12,6 +12,7 @@
     "@gsap/react": "^2.1.1",
     "@nextui-org/accordion": "^2.2.5",
     "@radix-ui/react-accordion": "^1.2.2",
+    "@radix-ui/react-toast": "^1.2.6",
     "@smakss/react-scroll-direction": "^4.2.0",
     "class-variance-authority": "^0.7.1",
     "classnames": "^2.5.1",
