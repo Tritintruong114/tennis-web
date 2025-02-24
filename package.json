@@ -9,18 +9,44 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@gsap/react": "^2.1.1",
+    "@hookform/resolvers": "^3.10.0",
+    "@nextui-org/accordion": "^2.2.5",
+    "@radix-ui/react-accordion": "^1.2.2",
+    "@radix-ui/react-label": "^2.1.1",
+    "@radix-ui/react-slot": "^1.1.1",
+    "@radix-ui/react-toast": "^1.2.6",
+    "@sanity/icons": "^3.6.0",
+    "@sanity/image-url": "^1.1.0",
+    "@sanity/vision": "^3.76.3",
+    "@smakss/react-scroll-direction": "^4.2.0",
+    "class-variance-authority": "^0.7.1",
+    "classnames": "^2.5.1",
+    "clsx": "^2.1.1",
+    "gsap": "^3.12.5",
+    "lucide-react": "^0.469.0",
+    "next": "15.0.3",
+    "next-sanity": "^9.8.59",
     "react": "19.0.0-rc-66855b96-20241106",
     "react-dom": "19.0.0-rc-66855b96-20241106",
-    "next": "15.0.3"
+    "react-hook-form": "^7.54.2",
+    "sanity": "^3.76.3",
+    "styled-components": "^6.1.15",
+    "tailwind-merge": "^2.5.5",
+    "tailwind-variants": "^0.3.1",
+    "tailwindcss-animate": "^1.0.7",
+    "usehooks-ts": "^3.1.0",
+    "zod": "^3.24.1"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@xpd/tailwind-3dtransforms": "^1.0.3",
+    "eslint": "^8",
+    "eslint-config-next": "15.0.3",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
-    "eslint": "^8",
-    "eslint-config-next": "15.0.3"
+    "typescript": "^5"
   }
 }
