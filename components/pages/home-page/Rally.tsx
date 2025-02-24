@@ -10,7 +10,12 @@ import Button from "@/components/elements/button";
 import Section from "@/components/layouts/section";
 import Container from "@/components/layouts/container";
 
-const Rally = () => {
+type RallyType = {
+  heading?: string;
+  image?: string;
+  cta?: string;
+};
+const Rally = ({ rally }: { rally: RallyType }) => {
   const imageWrapRef = useRef(null);
   const imageRef = useRef(null);
 
@@ -20,8 +25,8 @@ const Rally = () => {
         scroller: "body",
         trigger: imageWrapRef.current,
         scrub: true,
-        start: "-200% top",
-        end: "-100% top",
+        start: "0 top",
+        end: "200% top",
         toggleActions: "play reverse play reverse",
       },
       scale: 1,
@@ -32,9 +37,7 @@ const Rally = () => {
     <Section className="py-24 border-b">
       <Container className=" flex flex-col gap-6 justify-center items-center">
         <h2 className="font-coolvetica leading-none z-20 text-hero text-center">
-          Ready to
-          <br />
-          Rally?
+          {rally.heading || "Ready to Rally?"}
         </h2>
         <div
           className="sm:h-[600px] h-[450px] -mt-16 relative w-full"
@@ -42,14 +45,14 @@ const Rally = () => {
         >
           <Image
             ref={imageRef}
-            src="/images/locations.jpg"
+            src={rally.image || "/images/locations.jpg"}
             alt="Rally images"
             fill
-            className="w-full h-full scale-150"
+            className="w-full object-cover h-full scale-150"
           />
         </div>
         <Button color="secondary" fullWidth>
-          Join the camp
+          {rally.cta || "Contact for more"}
         </Button>
       </Container>
     </Section>

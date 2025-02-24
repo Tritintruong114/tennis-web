@@ -1,4 +1,3 @@
-"use client";
 import {
   Accordion,
   AccordionContent,
@@ -7,11 +6,16 @@ import {
 } from "@/components/ui/accordion";
 import Link from "next/link";
 import React from "react";
-import { faqs } from "@/data/mock.json";
 import Section from "@/components/layouts/section";
 import Container from "@/components/layouts/container";
+import { getHomepage } from "@/sanity/queries/homepage";
+type Faq = {
+  question: string;
+  answer: string;
+};
+const FAQ = async () => {
+  const { faqs } = await getHomepage();
 
-const FAQ = () => {
   return (
     <Section className="bg-black">
       <Container>
@@ -31,11 +35,11 @@ const FAQ = () => {
           </div>
 
           <Accordion type="single" collapsible className="w-full text-white">
-            {faqs.map((item, index) => {
+            {faqs.ourFaqs.map((item: Faq, index: number) => {
               return (
                 <AccordionItem
                   key={index}
-                  value={`item-${item.id}`}
+                  value={`item-${index}`}
                   className="border-highlight-green"
                 >
                   <AccordionTrigger>{item.question}</AccordionTrigger>

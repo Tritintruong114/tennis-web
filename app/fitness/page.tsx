@@ -8,7 +8,6 @@ import Section from "@/components/layouts/section";
 import React, { useLayoutEffect } from "react";
 import Container from "@/components/layouts/container";
 import Image from "next/image";
-import Rally from "@/components/pages/home-page/Rally";
 
 const FitnessPage = () => {
   useLayoutEffect(() => {
@@ -61,10 +60,10 @@ const FitnessPage = () => {
         <div className="sticky top-0 min-h-[100vh] -mt-[200vh] flex items-center justify-center">
           <div className="max-w-[60rem] text-center mx-auto">
             <h2 className="sm:text-[7rem] text-title uppercase font-coolvetica font-bold">
-              <span className="text-highlight-green">"</span>it's strength and
-              agility that give every athlete a
+              <span className="text-highlight-green">&quot;</span>it&#39;s
+              strength and agility that give every athlete a
               <span className="text-highlight"> competitive edge.</span>
-              <span className="text-highlight-green">"</span>
+              <span className="text-highlight-green">&quot;</span>
             </h2>
           </div>
         </div>
@@ -176,7 +175,6 @@ const FitnessPage = () => {
           </div>
         </Container>
       </Section>
-      <Rally />
     </React.Fragment>
   );
 };

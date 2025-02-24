@@ -2,7 +2,6 @@ import Button from "@/components/elements/button";
 import Container from "@/components/layouts/container";
 import Section from "@/components/layouts/section";
 import Coaches from "@/components/pages/home-page/Coaches";
-import Rally from "@/components/pages/home-page/Rally";
 import Image from "next/image";
 import React from "react";
 
@@ -92,7 +91,6 @@ const AboutUsPage = () => {
         </Container>
       </Section>
       <Coaches />
-      <Rally />
     </React.Fragment>
   );
 };

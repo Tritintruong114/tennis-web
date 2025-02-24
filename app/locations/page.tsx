@@ -1,7 +1,6 @@
 import Button from "@/components/elements/button";
 import Container from "@/components/layouts/container";
 import Section from "@/components/layouts/section";
-import Rally from "@/components/pages/home-page/Rally";
 import Image from "next/image";
 import React from "react";
 
@@ -82,7 +81,6 @@ const page = () => {
           </div>
         </Container>
       </Section>
-      <Rally />
     </React.Fragment>
   );
 };
