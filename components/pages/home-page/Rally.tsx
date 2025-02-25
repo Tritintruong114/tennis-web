@@ -15,6 +15,7 @@ type RallyType = {
   image?: string;
   cta?: string;
 };
+
 const Rally = ({ rally }: { rally: RallyType }) => {
   const imageWrapRef = useRef(null);
   const imageRef = useRef(null);
@@ -33,6 +34,7 @@ const Rally = ({ rally }: { rally: RallyType }) => {
       borderRadius: 30,
     });
   }, []);
+
   return (
     <Section className="py-24 border-b">
       <Container className=" flex flex-col gap-6 justify-center items-center">
@@ -51,7 +53,7 @@ const Rally = ({ rally }: { rally: RallyType }) => {
             className="w-full object-cover h-full scale-150"
           />
         </div>
-        <Button color="secondary" fullWidth>
+        <Button color="secondary" fullWidth className="relative">
           {rally.cta || "Contact for more"}
         </Button>
       </Container>

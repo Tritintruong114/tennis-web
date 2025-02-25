@@ -4,7 +4,7 @@ import Section from "@/components/layouts/section";
 import Image from "next/image";
 import React from "react";
 
-const page = () => {
+const page = async () => {
   return (
     <React.Fragment>
       <Section>
