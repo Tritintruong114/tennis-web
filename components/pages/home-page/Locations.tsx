@@ -5,7 +5,7 @@ import Button from "@/components/elements/button";
 import Section from "@/components/layouts/section";
 import Container from "@/components/layouts/container";
 import { getHomepage } from "@/sanity/queries/homepage";
-type Location = {
+export type Location = {
   link: string | null;
   image: string;
   tagline: string;

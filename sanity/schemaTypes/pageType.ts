@@ -46,6 +46,16 @@ const pageType = defineType({
           name: "rally",
           type: "rally",
         }),
+        // Facilities
+        defineArrayMember({
+          name: "facilities",
+          type: "facilities",
+        }),
+        // Textwithillus
+        defineArrayMember({
+          name: "textWithIllustration",
+          type: "textWithIllustration",
+        }),
       ],
     }),
   ],

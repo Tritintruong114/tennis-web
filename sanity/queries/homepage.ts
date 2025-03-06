@@ -31,6 +31,7 @@ export async function getHomepage() {
       excerpt
       }
     },
+    
     'locations':pageBuilder[][_type == "locations"][0]{
       heading,
       cta,

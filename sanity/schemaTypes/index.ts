@@ -12,6 +12,7 @@ import { coachesType } from "./coachesType";
 import { locationsType } from "./locationsType";
 import { faqsType } from "./faqsType";
 import { rallyType } from "./rallyType";
+import { facilitiesType } from "./facilitiesType";
 
 export const schema: { types: SchemaTypeDefinition[] } = {
   types: [
@@ -25,6 +26,7 @@ export const schema: { types: SchemaTypeDefinition[] } = {
     categoryType,
     registerType,
     locationsType,
+    facilitiesType,
     blockContentType,
     textWithIllustrationType,
   ],
