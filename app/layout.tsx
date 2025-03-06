@@ -3,8 +3,6 @@ import "./globals.css";
 import Header from "@/components/layouts/header";
 import Footer from "@/components/layouts/footer";
 import { Toaster } from "@/components/ui/toaster";
-import Rally from "@/components/pages/home-page/Rally";
-import { getHomepage } from "@/sanity/queries/homepage";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,15 +14,12 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const { rally } = await getHomepage();
-
   return (
     <html lang="en">
       <body>
         <Header />
         {children}
         <Toaster />
-        <Rally rally={rally} />
         <Footer />
       </body>
     </html>
