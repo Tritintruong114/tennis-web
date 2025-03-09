@@ -2,12 +2,13 @@
 import React, { useState } from "react";
 import Button from "./button";
 import { useToast } from "@/hooks/use-toast";
+import { cx } from "class-variance-authority";
 interface RegisterNewLetter {
   email?: string;
 }
 const NewLetter = () => {
   const { toast } = useToast();
-
+  const [isLoading, setIsLoading] = useState<boolean>(false);
   const [registerNewLetter, setRegisterNewLetter] = useState<RegisterNewLetter>(
     {
       email: "",
@@ -21,8 +22,18 @@ const NewLetter = () => {
     setRegisterNewLetter((prevData) => ({ ...prevData, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setIsLoading(true);
+    await fetch("/api/register", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        email: registerNewLetter.email,
+      }),
+    });
     toast({
       title: "Subscribed!",
       description: "You have successfully subscribed to our newsletter.",
@@ -44,7 +55,12 @@ const NewLetter = () => {
         onChange={handleChange}
         required
       />
-      <Button onClick={() => handleSubmit}>Subcribe</Button>
+      <Button
+        onClick={() => handleSubmit}
+        className={cx("text-sm", isLoading === true && "cursor-not-allowed")}
+      >
+        Subcribe
+      </Button>
     </form>
   );
 };
