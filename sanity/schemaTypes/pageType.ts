@@ -26,6 +26,11 @@ const pageType = defineType({
           name: "register",
           type: "register",
         }),
+        // socials
+        defineArrayMember({
+          name: "socials",
+          type: "socials",
+        }),
         // Coaches
         defineArrayMember({
           name: "coaches",
@@ -50,6 +55,10 @@ const pageType = defineType({
         defineArrayMember({
           name: "facilities",
           type: "facilities",
+        }),
+        defineArrayMember({
+          name: "history",
+          type: "history",
         }),
         // Textwithillus
         defineArrayMember({
