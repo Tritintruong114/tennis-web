@@ -43,7 +43,7 @@ const page = async () => {
           </div>
           <div className="hidden sm:block relative h-full -mr-24">
             <Image
-              src="/images/aboutus.jpg"
+              src={hero.heroImage || "/images/aboutus.jpg"}
               alt=""
               fill
               className="object-cover pl-12 h-full w-full object-top"
